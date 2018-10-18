@@ -14,7 +14,7 @@ We chose Bit Vector as it's fastest and easiest to implement. A string of 10<sup
 
 ## Code
 
-**unique.c** - Generates our input. Takes amount of numbers and max number of digits as input and generates a file named **randomnumsuniq** with random unique numbers in that range. To avoid duplicates we generate an array of integers, with length same as the max number possible and with values same as it's index position.
+**unique.c** - Generates our input file with random numbers. Takes amount of numbers and max number of digits as input and generates a file named **randomnumsuniq** with random unique numbers in that range. To avoid duplicates we generate an array of integers, with length same as the max number possible and with values same as it's index position.
 Then we iterate through it *n*-times (where *n* is the amount of numbers we want). Each iteration we pick a random number between current and last index position, we check the value on that random index position and swap it with one on our current position and print it out.
 
 **start.c** - Implementation of our algorithm. Reads **randomnumsuniq** file and outputs sorted list to **sorted** file.
